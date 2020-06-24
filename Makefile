@@ -5,8 +5,8 @@ default:
 .PHONY: build
 build:
 	sudo docker build -t ansible .
-	# docker tag squid kirscht/squid-proxy-docker:latest
-	# docker push new-repo:tagname
+	docker tag ansible kirscht/ansible-docker:latest
+	docker push kirscht/ansible-docker:latest
 
 .PHONY: start
 start:
