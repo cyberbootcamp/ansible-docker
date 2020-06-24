@@ -11,7 +11,7 @@ build:
 .PHONY: start
 start:
 	#sudo -E docker run -d -p 3128:3128 -p 3129:3129 --name squid squid
-	sudo -E docker run -d --name ansible cyberxsecurity/ansible
+	sudo -E docker run -d --name ansible kirscht/ansible
 
 .PHONY: connect
 connect:
