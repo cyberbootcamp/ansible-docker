@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
  && apt-get install -yq ansible \
- && adduser vagrant
+ && useradd -m vagrant
 
 USER vagrant
 
