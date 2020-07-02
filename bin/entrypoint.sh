@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exec >> /var/log/entrypoint.log
+exec >> /var/log/entrypoint/entrypoint.log
 exec 2>&1
 
 #service squid start
